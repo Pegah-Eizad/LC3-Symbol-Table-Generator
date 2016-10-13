@@ -1,0 +1,7 @@
+***THE SYMBOL TABLE***
+Loop   3003
+Done   3007
+Result 3009
+Zero   3010
+M0     3011
+M1     3012
