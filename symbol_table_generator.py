@@ -8,15 +8,11 @@
 
 #This code is owned by Pegah Eizadkhah and is not meant for redistribution. 
 
-
 import re
 import sys
 
-
 #first get rid of comments in text
 file_name = raw_input("Please enter a file name: ")    
-
-
 f = open(file_name , 'r')                 #open file 
 g = open ('outfile.txt' , 'w')            #create dummy file
 
@@ -60,8 +56,7 @@ def insert_data():
                 stringz_ = line.split(STRINGZ_)[1].strip()      #read string    
                 string_len = (len(stringz_)) - 2                #get string length
                 
-            
-            
+                        
             elem = line.split() if line.split() else ['']       #split line word for word
             if len(elem) > 1 and elem[0] not in toIgnore:       #if first word not in ignore list
                 label.append(elem[0])                           #append to list of labels
@@ -87,7 +82,6 @@ def pretty_print():
         a = j[0].ljust(longest)
         b = str(j[1])
         print (' '.join([a, b]))                                #prints results
-
        
 insert_data()                                                  #function call on insert method
 pretty_print()                                                 #function call on pretty-print
