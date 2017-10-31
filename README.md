@@ -10,5 +10,37 @@ symbol table and displays it for the user. In addition the user can retrieve the
 address of a label from the symbol table by specifying the label. The program uses 
 a tuple list (dictionary) to store the data from the input file. 
 
+****************************************************************
+
+Run the module.
+The program will ask for the name of your LC3 input file. Since the python program is scalable, this LC3 program can vary in length but should be formatted like the sample below (also see lc3_program_input.txt):
+
+     .ORIG x3000
+     LD R2, Zero
+     LD R0, MO
+     LD R1, M1
+    ;Begin Multiply
+Loop BRz Done
+     ADD R2, R2, R0
+     ADD R1, R1, #-1
+     BR LOOP
+    ;End Multiply
+Done ST R2, Result
+     HALT
+Result .FILL  x0000
+Zero   .FILL  x0000
+M0     .FILL  x0007
+M1     .FILL  x0003
+       .END
+       
+<br></br>
+The program will then ask if the user would like to look up the address of a label. 
+if so, press y or type in 'yes', and the result will be displayed. 
+If not, press any other other key and the program terminates.
+![alt text](https://github.com/Pegah-Eizad/LC3-Symbol-Table-Generator/blob/master/example.png "example")
+
+
+
+
 
 
