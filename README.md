@@ -17,7 +17,7 @@ The program will ask for the name of your LC3 input file. Since the python progr
 <br></br>
 ![alt text](https://github.com/Pegah-Eizad/LC3-Symbol-Table-Generator/blob/master/sample_input_example.png "example")      
 <br></br>
-<br></br>
+
 The program will then ask if the user would like to look up the address of a label. 
 if so, press y or type in 'yes', and the result will be displayed. 
 If not, press any other other key and the program terminates.
