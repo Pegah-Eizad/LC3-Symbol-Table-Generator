@@ -85,6 +85,24 @@ def pretty_print():
        
 insert_data()                                                  #function call on insert method
 pretty_print()                                                 #function call on pretty-print
-print() 
+print()
+
+#Ask user if they want to look up a label address
+def address_search():
+    label_search = input("Look up a label? y/n: ")             #ask user if they want to look up a label
+    if label_search.lower() == "yes" or label_search.lower() == "y":       #if yes, read the label
+       label_name = input('Please specify the label you would like to look up: ') 
+       counter = 0                                             #counter for keeping track of spot in tuple list
+       for j in data:                                          #look through the tuple list fo the specified label
+           a = j[0]                                            #store left side of each element in tuple
+           b = str(j[1])                                       #store right side of each element in tuple
+           if a == label_name:                                 #if there is a match on left side, display the address 
+              print('The address is: ' + b)
+           else:                                               #otherwise increment the count
+               counter += 1
+               if counter == len(data):                        #once the entire tuple is traversed and no match is found 
+                  print('Incorrect label specification. Label not found in LC3 program.') #give error message
+
+address_search()
 
 g.close() 
