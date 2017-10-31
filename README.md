@@ -14,7 +14,7 @@ a tuple list (dictionary) to store the data from the input file.
 
 Run the module.
 The program will ask for the name of your LC3 input file. Since the python program is scalable, this LC3 program can vary in length but should be formatted like the sample below (also see lc3_program_input.txt):
-<br></br>
+
 ![alt text](https://github.com/Pegah-Eizad/LC3-Symbol-Table-Generator/blob/master/sample_input_example.png "example")      
 <br></br>
 The program will then ask if the user would like to look up the address of a label. 
